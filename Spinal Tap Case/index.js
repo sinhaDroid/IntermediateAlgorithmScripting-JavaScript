@@ -7,6 +7,6 @@ function spinalCase(str) {
   
     // Split on whitespace and underscores and join with dash
     return str.toLowerCase().split(/(?:_| )+/).join('-');
-  }
+}
 
   spinalCase('This is spinal case string');
