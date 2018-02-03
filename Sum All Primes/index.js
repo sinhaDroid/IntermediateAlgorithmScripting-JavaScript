@@ -29,3 +29,6 @@ function sumPrimes(num) {
   
     return res;
 }
+
+sumPrimes(99);
+
