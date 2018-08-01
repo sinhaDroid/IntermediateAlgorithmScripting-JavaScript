@@ -1,8 +1,15 @@
+// Boo Who
+// null
 
 function booWho(bool) {
     // What is the new fad diet for ghost developers? The Boolean.
     return typeof bool === 'boolean';
 }
   
-booWho(null);
+console.log(booWho(null));
+console.log(booWho('boolean'));
+
+// Solution
+// false
+// false
   
