@@ -1,13 +1,14 @@
+// Sum All Primes
+// Basic Solution
+// 2, 5, 9, 10
 
 function sumPrimes(num) {
     var res = 0;
-  
-    // FUnction to get the primes up to max in an array
+
+    // Function to get the primes up to max in an array
     function getPrimes(max) {
         var sieve = [];
-        var i;
-        var j;
-        var primes = [];
+        var i, j, primes = [];
         for (i = 2; i <= max; ++i) {
             if (!sieve[i]) {
                 // i has not been marked -- it is prime
@@ -17,18 +18,24 @@ function sumPrimes(num) {
                 }
             }
         }
-  
         return primes;
     }
-  
+
     // Add the primes
     var primes = getPrimes(num);
     for (var p = 0; p < primes.length; p++) {
         res += primes[p];
     }
-  
     return res;
 }
 
-sumPrimes(99);
+console.log(sumPrimes(2));
+console.log(sumPrimes(5));
+console.log(sumPrimes(9));
+console.log(sumPrimes(10));
 
+// Solution
+// 2
+// 10
+// 17
+// 17
