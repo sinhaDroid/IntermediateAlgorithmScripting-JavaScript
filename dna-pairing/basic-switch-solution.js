@@ -1,3 +1,7 @@
+// DNA Pairing
+// Basic Solution
+// GCG returns [['G', 'C'], ['C', 'G'], ['G', 'C']]
+
 function pairElement(str) {
     // Return each strand as an array of two elements, the original and the pair.
     var res = [];
@@ -21,7 +25,6 @@ function pairElement(str) {
     };
 
     // Loops through the input and pair.
-    console.log(str);
     for (var i = 0; i < str.length; i++) {
         getPaired(str[i]);
     }
@@ -29,4 +32,7 @@ function pairElement(str) {
     return res;
 }
 
-pairElement("GCG");
+console.log(pairElement("GCG"));
+
+// Solution
+//  [ 'G', 'C' ], [ 'C', 'G' ], [ 'G', 'C' ] ]
