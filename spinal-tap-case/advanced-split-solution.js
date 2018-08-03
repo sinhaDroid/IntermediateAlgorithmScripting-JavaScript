@@ -1,5 +1,5 @@
 // Spinal Tap Case
-// Advanced Solution
+// Advanced Solution Part 1
 // This is spinal case string
 
 function spinalCase(str) {
