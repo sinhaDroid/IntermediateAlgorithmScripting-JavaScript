@@ -1,5 +1,5 @@
 // Pig Latin
-// Advanced Solution
+// Advanced Solution Part 1
 // "consonant"
 
 function translatePigLatin(str) {
