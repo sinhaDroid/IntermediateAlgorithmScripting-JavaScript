@@ -1,7 +1,10 @@
+// Sorted Union
+// Intermediate Solution
+// [1, 3, 2], [5, 2, 1, 4], [2, 1]
 
-function uniteUnique(arr) {
+function uniteUnique() {
     // Creates an empty array to store our final result.
-    var newArr;
+    var newArr = [];
 
     //Convert the arguments object into an array
     var args = Array.prototype.slice.call(arguments);
@@ -17,4 +20,7 @@ function uniteUnique(arr) {
     return newArr;
 }
   
-uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
+
+// Solution
+// [ 1, 3, 2, 5, 4 ]
